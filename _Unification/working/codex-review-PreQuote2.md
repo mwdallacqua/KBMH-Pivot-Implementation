@@ -1,0 +1,42 @@
+# Codex Review (Second Pass) — §3.03 Pre-Quote
+
+## Headline assessment
+Needs further work before lock. The section is structurally close and several first-pass fixes were applied, but D-2, D-4, cross-area dependencies, and source citations still have material defects. The largest risk is that KBM’s v2 labor-quote findings were added as open questions instead of being reconciled into the divergence narrative and decision table.
+
+## Carry-through issues from first-pass review
+- Source citation depth still fails the standard: D-1/D-7/D-8 cite broad Pivot `§3.01` and most KBM citations omit section-level anchors. See standard at [drafting-standards.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/working/drafting-standards.md:155>) and current D-1 source at [05 - Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/05 - Pre-Quote.md:59>).
+- D-2 still uses old KBM labor types: “Internal, External, Intermarket, LTS” at [05 - Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/05 - Pre-Quote.md:78>). KBM v2 says active types are Third Party and Intermarket, Internal/LTS inactive at [GapAnalysis v2](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/Pre-Quote/KBMH/3 Output/GapAnalysis_PreQuote_Labor_Quotes_v2.0_COMPREHENSIVE.md:88>).
+- RFP mechanics still drift: Pre-Quote says RFP workflow lives in Marketing [05 - Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/05 - Pre-Quote.md:182>), but CT-8 says task/resource assignment and project/folder timing are deferred to Pre-Quote and/or Operations [11 - Cross-Area Decisions Index.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/11 - Cross-Area Decisions Index.md:119>).
+- Division-taxonomy dependency remains missing even though D-8 relies on “divisional sales motion” [05 - Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/05 - Pre-Quote.md:166>).
+
+## New issues
+- Source coverage is internally inconsistent: header says Pivot Pre-Quote BRD v1.0 [05 - Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/05 - Pre-Quote.md:6>), but the source path is v2.0 [05 - Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/05 - Pre-Quote.md:8>) and Pivot version control includes v2.0 client responses [Pivot Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/working/pivot-brds-md/Pre-Quote.md:91>).
+- D-5 says Pivot has “six issue types” but lists eight. Compare [05 - Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/05 - Pre-Quote.md:122>) to Pivot design rows [Pivot Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/working/pivot-brds-md/Pre-Quote.md:199>).
+- D-4 over-expands the launch-point decision to “labor quotes, design requests, project requests” [05 - Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/05 - Pre-Quote.md:112>). KBM v2 validates labor quote opportunity launch, while design and PM workflows are not answered [GapAnalysis v2](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/Pre-Quote/KBMH/3 Output/GapAnalysis_PreQuote_Labor_Quotes_v2.0_COMPREHENSIVE.md:52>).
+- Open questions #11 and #12 misstate source status. Multiple accepted quotes are about different scopes, not “one scope,” and PO issuance is confirmed acceptance, not an open Realize decision. See current text [05 - Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/05 - Pre-Quote.md:250>) and source [GapAnalysis v2](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/Pre-Quote/KBMH/3 Output/GapAnalysis_PreQuote_Labor_Quotes_v2.0_COMPREHENSIVE.md:245>), [GapAnalysis v2](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/Pre-Quote/KBMH/3 Output/GapAnalysis_PreQuote_Labor_Quotes_v2.0_COMPREHENSIVE.md:404>).
+- Decision math reconciles numerically, but not substantively: v2 labor decisions are parked in open questions instead of reconciled into D-2/D-4 and §3.03.6.
+
+## Cross-area drift
+- CT-14 SharePoint/File Cabinet lock is not reflected. Current text says generic “document migration plan” and “Standard NetSuite document management” [05 - Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/05 - Pre-Quote.md:180>), while CT-14 locks File Cabinet for transactional documents and SharePoint for collaboration documents, with KBM Google Drive sunset [11 - Cross-Area Decisions Index.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/11 - Cross-Area Decisions Index.md:211>).
+- CT-16 Workfront sunset is missing from the dependency table. Pre-Quote mentions Workfront transition [05 - Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/05 - Pre-Quote.md:248>), but should cite Project Management §3.06 D-1 / CT-16 because IPM routing executes against Orion-native project records [11 - Cross-Area Decisions Index.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/11 - Cross-Area Decisions Index.md:231>).
+- CT-3 HubSpot: no drift found.
+
+## Standards / tone
+Fail. Banned terminology and em-dash usage are fine. Tone issue remains at [05 - Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/05 - Pre-Quote.md:18>): “larger and more cross-functional” and “exceeds Pivot’s framing” are comparative; soften to context-based wording. Section-reference issue: “Pivot Requirements Management section” should be `Pivot §3.02 Requirements Management` [05 - Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/05 - Pre-Quote.md:33>).
+
+## Source accuracy
+Fail. 57 → 24 is accurate [Pivot Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/working/pivot-brds-md/Pre-Quote.md:189>). Material problems: D-2 old labor types, unsupported “primary marketing-and-operations focus” [05 - Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/05 - Pre-Quote.md:78>), D-5 count error, and PO-as-acceptance misclassified as open. Pending dashboard should be marked Phase 2/post-initial go-live per [GapAnalysis v2](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/Pre-Quote/KBMH/3 Output/GapAnalysis_PreQuote_Labor_Quotes_v2.0_COMPREHENSIVE.md:396>).
+
+## What’s missing
+- Pivot Project Navigator, Master Project, Related Projects [Pivot Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/working/pivot-brds-md/Pre-Quote.md:510>).
+- Pivot site-condition details: badging/vaccinations and address-level placement [Pivot Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/working/pivot-brds-md/Pre-Quote.md:501>).
+- Pivot design capacity / Design Studio Lead assignment [Pivot Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/working/pivot-brds-md/Pre-Quote.md:559>).
+- Pivot customer approval / D&B / ezyCollect / new customer application [Pivot Pre-Quote.md](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/_Unification/working/pivot-brds-md/Pre-Quote.md:632>).
+- KBM external pre-quote URL linkage and 15% labor GP cross-reference [GapAnalysis v2](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/Pre-Quote/KBMH/3 Output/GapAnalysis_PreQuote_Labor_Quotes_v2.0_COMPREHENSIVE.md:382>), [GapAnalysis v2](</Users/marcusdallacqua/Documents/KBMH-Pivot-Implementation/Pre-Quote/KBMH/3 Output/GapAnalysis_PreQuote_Labor_Quotes_v2.0_COMPREHENSIVE.md:388>).
+
+## Recommended edits before lock
+1. Rewrite D-2 against KBM v2 `REQ-LQ-001` through `REQ-LQ-008`.
+2. Fix D-4 to limit confirmed launch-point language to labor quotes unless sources support design/project requests.
+3. Correct open questions #10-#12 and decide whether any belong in §3.03.6.
+4. Update cross-area table for CT-8, CT-14, CT-16, and division taxonomy.
+5. Tighten every divergence source line to requirement IDs plus section/file anchors, then clean the tone lines.

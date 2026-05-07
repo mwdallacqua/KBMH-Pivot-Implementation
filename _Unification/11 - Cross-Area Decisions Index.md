@@ -79,12 +79,12 @@ CRM does not lock the routing of approvals. The merged-company role assignments 
 | Field | Value |
 |---|---|
 | Surface | CRM §3.02.4 (cross-area dependencies) |
-| Decided in | Order Management §3.04 or Financial Management §3.08 (to determine) |
-| Carries to | wherever it lands |
-| Status | **Deferred** |
+| Decided in | **Order Management §3.04 D-8b** — vendor credit limit warning framework owned here as a procurement control integrated with the PO generation flow |
+| Carries to | Financial Management §3.08 D-9 (credit-policy governance cross-reference); BI §3.09 (dashboard portlets surface warnings) per CT-12 |
+| Status | **Resolved** — owned in Order Management per CT-12 |
 | Working default | KBM's framework adopted as merged-company default: vendor credit limit field, 90% warning threshold, hard-stop on PO creation when over limit (with override), proactive dashboard visibility |
 
-KBM articulated this; Pivot did not raise it. The capability is valuable for the merged company. The home section determines whether it's an Order Management procurement control or a Financial Management governance control.
+KBM articulated this; Pivot did not raise it. The capability is valuable for the merged company. The framework is owned in Order Management as a procurement control integrated with PO generation; Financial Management cross-references for credit-policy governance.
 
 ---
 
@@ -200,17 +200,17 @@ The merged-company predictive analytics capability (BI D-7) depends on the depth
 
 ---
 
-### CT-14. Existing document migration to NetSuite File Cabinet
+### CT-14. Document storage architecture and existing document migration
 
 | Field | Value |
 |---|---|
-| Surface | BI §3.09 D-5 (document management) |
-| Decided in | System Setup & Configuration §3.10 |
-| Carries to | BI §3.09 (document management framework readiness depends on migration completion) |
-| Status | **Deferred to System Setup §3.10** |
-| Working default | Existing project, customer, and vendor documents migrate from Pivot's network drives, SharePoint, email attachments, and local storage to NetSuite File Cabinet. KBM's existing document repositories also migrate where applicable. SharePoint and network drives phase out for project documentation. Version control applies prospectively; historical versions may not be preserved per Pivot BRD assumption. |
+| Surface | BI §3.09 D-5 (document management); System Setup §3.10 D-3 (collaboration platform decision) |
+| Decided in | System Setup & Configuration §3.10 D-3 |
+| Carries to | Marketing §3.01, BI §3.09, Operations §3.05, Project Management §3.06, Financial Management §3.08 (any section storing project, customer, vendor, or transactional documents) |
+| Status | **Locked** — recommended default yes per System Setup §3.10 D-3 |
+| Working default | NetSuite File Cabinet is the merged-company primary repository for transactional documents (invoices, POs, contracts, signed proposals). SharePoint is the merged-company collaboration-document platform for project, design, and operational documents that benefit from external collaboration. KBM's Google Drive content migrates to SharePoint on a defined transition timeline; the Google Drive integration is sunset once migration completes. Existing project, customer, and vendor documents in Pivot's SharePoint, network drives, email attachments, and local storage are consolidated into the merged-company SharePoint footprint or migrated to NetSuite File Cabinet based on document type. KBM users onboard into SharePoint as part of the Discovery → Activate transition. Version control applies prospectively; historical versions may not be preserved per Pivot BRD assumption. |
 
-Document management capability (BI D-5) is foundational; the migration plan that populates the File Cabinet is a System Setup decision.
+Document management capability (BI D-5, Marketing references, Project Management documentation) is foundational; the merged-company architecture is locked at System Setup §3.10 D-3 with SharePoint as the collaboration platform and NetSuite File Cabinet as the transactional-document repository.
 
 ---
 
@@ -228,6 +228,20 @@ The scorecard composition is a BI decision. The metric inputs come from CRM-lock
 
 ---
 
+### CT-16. Workfront sunset and project-management platform consolidation
+
+| Field | Value |
+|---|---|
+| Surface | Project Management §3.06 D-1 |
+| Decided in | Project Management §3.06 D-1 |
+| Carries to | Operations §3.05 (time tracking against project tasks; resource utilization), BI §3.09 (project-status dashboards now reside in Orion), System Setup & Configuration §3.10 D-5 (Workfront historical data migration scope and timing), Pre-Quote §3.03 (IPM routing executes against the Orion project record) |
+| Status | **Locked** — recommended default yes per Project Management §3.06 D-1 |
+| Working default | Project management consolidates into NetSuite Orion's native project record framework, augmented with custom enhancements for task management, resource allocation, dependency tracking, and capacity planning. Workfront is sunset on a defined transition timeline. Pivot's PM team migrates to Orion-native execution; KBM's PMs onboard into the same consolidated environment. The merged-company decision at the working session is **transition shape** — capability-replacement scope at cutover (which Workfront features must be present in Orion at go-live vs. phased afterward) and Workfront sunset timeline — not platform choice. The transition plan front-loads the capabilities Pivot's PM team relies on most heavily and protects PM productivity through cutover. |
+
+Workfront retention is not on the table; the source-backed direction (Pivot's Project Management BRD specifies Orion replaces Workfront) is committed. Downstream sections cite Project Management §3.06 D-1 as the home for the platform decision and System Setup §3.10 D-5 for the historical data-migration plan.
+
+---
+
 ## Adding new threads
 
 When a section drafts surfaces a new cross-area dependency, append a `CT-N` entry below following the same shape. Increment N. Do not reuse retired numbers.
@@ -236,4 +250,4 @@ When a thread closes (decision locked in its home section, no further dependency
 
 ---
 
-*Last updated: May 4, 2026 — seeded from the locked CRM sample; CT-12 through CT-15 added with the BI section lock.*
+*Last updated: May 7, 2026 — promoted to deliverable as `11 - Cross-Area Decisions Index.md`; CT-3 (HubSpot bi-directional integration) and CT-14 (SharePoint as collaboration platform with Google Drive sunset) updated to locked status; CT-16 (Workfront sunset to Orion-native project execution) added.*

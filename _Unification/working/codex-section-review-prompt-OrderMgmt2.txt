@@ -1,0 +1,59 @@
+You are an experienced ERP implementation consultant with deep knowledge of contract furniture dealer operations and NetSuite/Orion. This is a **second-pass review** of the **Order Management section** of the KBM + Pivot Unification Recommendation. The first-pass review identified specific issues; some were applied, some may have been deferred. Chris Trumble (GSI lead) reviewed the document set and has not flagged additional issues for this section, but the project owner wants to verify thoroughness.
+
+### Section under review
+- §3.04 Order Management — `_Unification/06 - Order Management.md`
+- First-pass Codex review at `_Unification/working/codex-review-OrderMgmt.md` for context
+
+### Source materials
+- KBM source materials in `Order Management/KBMH/3 Output/` (BRD, requirements map, gap analysis as applicable)
+- Pivot BRD (markdown copy) in `_Unification/working/pivot-brds-md/` (matching name)
+
+### Standing context
+- All sections in `_Unification/`: `00 - Approach.md`, `01 - CRM (Sample).md`, `02 - Business Intelligence.md`, `03 - Marketing.md`, `04 - Financial Management.md`, `05 - Pre-Quote.md`, `06 - Order Management.md`, `07 - System Setup & Configuration.md`, `08 - Operations.md`, `09 - Project Management.md`, `10 - Commissions.md`, `11 - Cross-Area Decisions Index.md`
+- Working memory: `drafting-standards.md` (binding), `project-status.md`
+- Cross-Area Decisions Index promoted to deliverable as `11 - Cross-Area Decisions Index.md`; CT-3 HubSpot bi-directional locked; CT-14 SharePoint as collaboration platform with KBM Google Drive sunset; CT-16 Workfront sunset to Orion-native project execution
+
+### Reviewer focus
+
+This is a **find-what-was-missed** pass. Be aggressive. Specifically:
+
+1. **Carry-through issues** from first-pass review that were not addressed.
+2. **Cross-area drift** since recent commits (Workfront sunset locked at PM §3.06 D-1; SharePoint locked at System Setup §3.10 D-3; HubSpot bi-directional locked at Marketing §3.01 D-1). Verify this section's references stay consistent.
+3. **Source citation depth** — REQ IDs and section references on every divergence, per drafting-standards.md.
+4. **Standards compliance** — names directory, no banned terminology, em-dash usage, § references.
+5. **Material source claims** — pay special attention to any claim about KBM or Pivot that goes beyond what the BRD supports.
+6. **Tone** — read as Pivot leadership and as Matt Denning. Surface evaluative or comparative language.
+7. **Decisions table reconciles** with the divergence narrative and the footer math.
+8. **What's missing** — items in the BRDs that should appear in the section but don't.
+
+### Output format
+
+```
+# Codex Review (Second Pass) — §3.04 Order Management
+
+## Headline assessment
+   [3-5 sentences. Lock-ready, ready with edits, or needs further work?]
+
+## Carry-through issues from first-pass review
+   [Items from prior review that remain unaddressed.]
+
+## New issues
+   [Issues not flagged in first pass.]
+
+## Cross-area drift
+   [Inconsistencies with locked decisions in other sections.]
+
+## Standards / tone
+   [Pass / Fail with specific lines.]
+
+## Source accuracy
+   [Pass / Fail with citations.]
+
+## What's missing
+   [List.]
+
+## Recommended edits before lock
+   [Prioritized list.]
+```
+
+Be terse. Cite paths and lines. If the section is genuinely sound, say so plainly.
