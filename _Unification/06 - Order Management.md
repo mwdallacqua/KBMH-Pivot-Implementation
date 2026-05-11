@@ -176,19 +176,19 @@ Eight in-area divergences. Each is presented as: how each company approached it 
 
 ---
 
-### D-7. MillerKnoll integrations — ServiceNet, ServiceTime, Coupa, Quote Tool, Order Manager
+### D-7. MillerKnoll integrations — ServiceNet, MillerKnoll Quote Tool, MillerKnoll Order Manager
 
-**Source:** KBM REQ-039 through REQ-042 (`Requirements_Map_OrderManagement_v1.0.md`); Pivot Miller-Knoll Order Manager Integration section (`Order_Management.md:1097-1172`)
+**Source:** KBM REQ-039 / REQ-042 (`Requirements_Map_OrderManagement_v1.0.md`); Pivot Miller-Knoll Order Manager Integration section (`Order_Management.md:1097-1172`)
 
-**KBM's approach.** KBM's source material articulates four MillerKnoll-related integrations: ServiceNet for intermarket orders (REQ-039); ServiceTime for high-volume intermarket order handling (~thousands annually, Shannon's primary workload at 8-10/day, REQ-041); Coupa email-parsing automation for order creation (REQ-040, evaluation pending based on ROI); the MillerKnoll Quote Tool at proposal and PO level (REQ-042). KBM identifies Shannon as a potential bottleneck risk for thousands of intermarket orders.
+**KBM's approach.** KBM's source material articulates ServiceNet integration for intermarket orders (REQ-039) and the MillerKnoll Quote Tool at proposal and PO level (REQ-042). KBM also references additional intermarket-tooling and Coupa email-parsing evaluation in REQ-040 / REQ-041; those are addressed separately below and in cross-area dependencies.
 
-**Pivot's approach.** Pivot's BRD identifies MillerKnoll Order Manager as a primary integration with vendor splitting, acknowledgement processing, and transmission through appropriate channels (Pivot Miller-Knoll Order Manager Integration section). The integration framework addresses PO generation and vendor coordination but does not specifically articulate ServiceNet, ServiceTime, or Coupa.
+**Pivot's approach.** Pivot's BRD identifies MillerKnoll Order Manager as a primary integration with vendor splitting, acknowledgement processing, and transmission through appropriate channels (Pivot Miller-Knoll Order Manager Integration section). The integration framework addresses PO generation and vendor coordination.
 
-**Recommendation for the merged company.** Combine the integration suite. ServiceNet, ServiceTime, MillerKnoll Quote Tool, and the broader MillerKnoll Order Manager integration are all configured for the merged company. Coupa email-parsing automation evaluation is preserved as a Phase-1-or-Phase-2 decision based on the merged-company's combined intermarket volume and ROI analysis. KBM staff (including Shannon) and Pivot order-processing staff jointly inherit the integrated MillerKnoll integration suite. Shannon's intermarket-order workload pattern is preserved through the same ServiceTime integration; merged-company role assignment for the high-volume intermarket position is part of the organizational alignment.
+**Recommendation for the merged company.** Configure the standard MillerKnoll integration suite — **ServiceNet, MillerKnoll Quote Tool, and MillerKnoll Order Manager**. Both companies use these integrations today; carrying them forward is straightforward. Coupa email-parsing automation evaluation (KBM REQ-040) is preserved as a Phase-1-or-Phase-2 decision based on the merged-company's combined intermarket volume and ROI analysis. KBM's additional intermarket tooling (REQ-041) and Shannon's high-volume intermarket-order workload are configured separately during Realize-phase; merged-company role assignment for the high-volume intermarket position is part of the organizational alignment.
 
 **Decisions for the leadership team.**
 
-- (7a) Confirm: combined MillerKnoll integration suite (ServiceNet, ServiceTime, Quote Tool, Order Manager). *Recommended default: yes.*
+- (7a) Confirm: MillerKnoll integration suite (ServiceNet, MillerKnoll Quote Tool, MillerKnoll Order Manager). *Recommended default: yes.*
 - (7b) Confirm: Coupa email-parsing automation evaluation preserved as Phase-1-or-Phase-2 decision based on merged-company intermarket volume and ROI. *Recommended default: yes (evaluate during Realize).*
 
 ---
@@ -261,7 +261,7 @@ The merged-company Order Management playbook in shorthand:
 - **PDF Composer and template management:** Pivot's PDF Composer (10 templates with dynamic field selection — budgetary / formal / GSA / client-specific); KBM's self-service ownership and version control framework; vendor PO redesign as explicit deliverable
 - **Client quote approval:** Pivot's web-based portal replacing Docentric email system
 - **Tax overrides:** Manual override capability for government and MillerKnoll-direct-bill orders (KBM REQ-013)
-- **MillerKnoll integrations:** Combined suite (ServiceNet, ServiceTime, Quote Tool, Order Manager); Coupa evaluation deferred to Realize-phase ROI analysis
+- **MillerKnoll integrations:** Suite — ServiceNet, MillerKnoll Quote Tool, MillerKnoll Order Manager (both companies use these); Coupa email-parsing evaluation deferred to Realize-phase ROI analysis
 - **PO generation depth:** Pivot's framework — direct PO from SIF, draft PO with line constitution, mass PO updates, requisition workflows, intelligent splitting; KBM's vendor credit limit warning integrated as pre-creation check
 - **Tiered pricing escalation:** Retained as merged-company business issue with cross-organization commercial ownership (KBM REQ-043)
 - **Commission:** Header-level with split-percentage (CRM-locked); line-level commissionable flag; storage fees always commissionable
@@ -288,7 +288,7 @@ Net read: the merged-company Order Management combines design choices that fit t
 | 5c | Customer-facing and vendor-facing templates recreated via PDF Composer; vendor PO redesign as explicit deliverable | Yes | D-5 |
 | 5d | Web-based client quote approval portal adopted, replacing Docentric email system | Yes | D-5 |
 | 6 | Manual tax-override capability for government and MillerKnoll-direct-bill orders | Yes | D-6 |
-| 7a | Combined MillerKnoll integration suite (ServiceNet, ServiceTime, Quote Tool, Order Manager) | Yes | D-7 |
+| 7a | MillerKnoll integration suite (ServiceNet, MillerKnoll Quote Tool, MillerKnoll Order Manager — both companies use these) | Yes | D-7 |
 | 7b | Coupa email-parsing automation evaluation preserved as Phase-1-or-Phase-2 decision | Yes (evaluate during Realize) | D-7 |
 | 8a | Pivot's PO generation framework (direct PO from SIF, draft PO with line constitution, mass PO updates, requisition workflows, intelligent splitting) | Yes | D-8 |
 | 8b | Vendor credit limit warning framework adopted from KBM (REQ-026); framework owned here per CT-12 | Yes | D-8 |
@@ -316,7 +316,7 @@ Net read: the merged-company Order Management combines design choices that fit t
 | Customer-facing and vendor-facing templates recreated | Specified (REQ-029, REQ-030) | Implicit | Configure per D-5c; vendor PO redesign explicit |
 | Web-based client quote approval portal (Docentric replacement) | Not specified | Specified | Build per D-5d |
 | Tax-override capability (government, MK direct bill) | Specified (REQ-013) | Not articulated | Configure per D-6 |
-| MillerKnoll integrations (ServiceNet, ServiceTime, Quote Tool, Order Manager) | Specified (REQ-039 through REQ-042) | Specified (Order Manager) | Build combined suite per D-7 |
+| MillerKnoll integrations (ServiceNet, MillerKnoll Quote Tool, MillerKnoll Order Manager) | Specified (REQ-039, REQ-042) | Specified (Order Manager) | Configure suite per D-7 |
 | Coupa email-parsing automation | Evaluation pending (REQ-040) | Not specified | Defer per D-7b |
 | Direct PO from SIF | Not specified | Specified | Build per D-8a |
 | Draft PO with line constitution | Not specified (KBM gap-analysis open) | Specified | Build per D-8a |

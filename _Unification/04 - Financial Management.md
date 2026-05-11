@@ -118,9 +118,9 @@ Ten in-area divergences. Each is presented as: how each company approached it (w
 
 **Pivot's approach.** Pivot does not have a 15% labor markup. Pivot's dual GP structure (per CRM §3.02 D-6, locked) is built on actual labor costs vs. quoted labor costs — a different mechanism that doesn't add a contingency markup. Pivot's BRD does not articulate a labor-markup question because the practice doesn't exist in its operating model.
 
-**Recommendation for the merged company.** Treat the 15% labor markup as a KBM-specific historical practice to evaluate during the merger's organizational alignment. The merged-company GP framework is already locked at the CRM level (§3.02 D-6) using Pivot's structural baseline (Target GP %, MillerKnoll mix, erosion across quote → invoice → project actuals). The recommendation is to align with the locked CRM GP framework — actual labor cost without a 15% markup contingency — and address commission impacts through the merged-company commission framework decided in §3.07 Commissions. Eliminating the markup simplifies custom development scope and aligns the merged company on a single GP definition. Sales-team communication is required to set expectations on commission impact.
+**Recommendation for the merged company.** The 15% labor markup is a long-established KBM pattern (Order Management REQ-038; Operations REQ-021 / REQ-022 / REQ-023; Pre-Quote v2.0 REQ-LQ-006) and a KBM-named decision gate (Matt and Mark hold leadership authority). The merged-company GP framework is already locked at the CRM level (§3.02 D-6) using Pivot's structural baseline (actual GP with time-tracked labor vs. commissionable GP with quoted labor rates) — a different mechanism than KBM's markup-contingency approach. GSI's instinct is that the commissionable-GP-on-quoted-labor framework renders the 15% markup formula line unnecessary, simplifying custom development scope and aligning the merged company on a single GP definition. **However, because the pattern is KBM's and the change materially affects KBM staff's commission experience, the retention vs. elimination decision belongs to KBM leadership.** The working session is where this decision lands. If retained, the formula-line pattern (cost-only, no revenue; positioned at bottom, uneditable, non-printing per KBM REQ-021 / REQ-022 / REQ-023) is configured in Orion. If eliminated, sales-team communication is required and the commission framework operates on commissionable GP directly per Commissions §3.07 D-1.
 
-**Decision for the leadership team.** Confirm: 15% labor markup eliminated for the merged company; merged-company GP framework operates on actual labor costs per the locked CRM §3.02 D-6 framework. *Recommended default: yes.* (Commission impact addressed in Commissions §3.07 commission framework design.)
+**Decision for the leadership team.** **Decide: retain or eliminate the 15% labor markup formula-line pattern for the merged company.** *Decided at working session with KBM leadership input (Matt and Mark per KBM BRD framing); GSI's instinct is elimination but we follow KBM's lead. Commission framework impact addressed in Commissions §3.07 D-1.*
 
 ---
 
@@ -235,7 +235,7 @@ The merged-company Financial Management playbook in shorthand:
 - **Foundation:** Single subsidiary, USD-only, 13-period calendar, merged-company COA designed from clean foundation using NetSuite dimensional fields
 - **Period close:** NetSuite Period Close Checklist with 7-day working target (Pivot's current cadence)
 - **Revenue recognition:** Joint design session for merged-company recognition rules with ASC 606 compliance validation; Pivot's accrued revenue journal-entry framework with approval workflow as operational mechanism
-- **Labor markup:** 15% markup eliminated; merged-company GP operates on actual labor cost per locked CRM §3.02 D-6 framework
+- **Labor markup:** 15% markup retention vs. elimination is open at the working session — GSI follows KBM's lead since the pattern is theirs (Matt and Mark hold authority per KBM BRD framing). Merged-company GP operates on the locked CRM §3.02 D-6 dual GP framework regardless
 - **GP reporting:** Dual GP framework per Pivot's actual-vs-quoted model, with role-based visibility (sales sees commissionable GP, management sees actual GP)
 - **Banking:** Multi-bank capability; Advanced Electronic Bill Payments for ACH; Cash360 dashboard; positive pay configured per bank capabilities
 - **Expense management:** Joint platform evaluation (Expensify or RAMP); platform decision at working session
@@ -256,7 +256,7 @@ Net read: the merged-company Financial Management combines design choices that f
 | 2b | 13-period calendar adopted as merged-company calendar | Yes | D-2 |
 | 3a | Joint revenue-recognition-rules design session with ASC 606 compliance validation | Yes (rules confirmed during session) | D-3 |
 | 3b | Accrued revenue journal entries with approval workflow adopted as operational mechanism | Yes | D-3 |
-| 4 | 15% labor markup eliminated; merged-company GP on actual labor cost per CRM §3.02 D-6 | Yes | D-4 |
+| 4 | 15% labor markup retention vs. elimination for the merged company (KBM REQ-038 / Operations REQ-021-023 / Pre-Quote v2.0 REQ-LQ-006) | Decided at working session | D-4 |
 | 5 | Dual GP framework per Pivot's actual-vs-quoted model with role-based visibility | Yes | D-5 |
 | 6a | Multi-bank capability — West Coast Community Bank (KBM) and Comerica (Pivot) as merged-company bank accounts | Yes | D-6 |
 | 6b | Advanced Electronic Bill Payments for direct ACH from NetSuite | Yes | D-6 |
@@ -275,7 +275,7 @@ Net read: the merged-company Financial Management combines design choices that f
 | Chart of accounts | Current Core COA (40+ pages) | Current D365 COA | Design fresh per D-1 |
 | Period close framework | Excel-based 10-day | 7-day cadence | Build NetSuite Period Close Checklist per D-2 |
 | Revenue recognition rules | Currently at order creation | Accrued revenue framework specified | Joint design session per D-3 |
-| 15% labor markup | In Core | Not present | Eliminate per D-4 |
+| 15% labor markup | In Core (REQ-038 / Operations REQ-021-023 / Pre-Quote v2.0 REQ-LQ-006) | Not present | Retain or eliminate per D-4 (working session decision) |
 | Dual GP framework | Project GP + Commissionable GP (markup-driven) | Actual vs. quoted (locked CRM §3.02 D-6) | Reconfigure per D-5 |
 | Banking integration | West Coast Community Bank specified, in progress | Pivot's bank specified, in progress | Multi-bank per D-6 |
 | Advanced Electronic Bill Payments | Specified | Specified (eliminating 42 manual ACH/wires) | Configure per D-6b |

@@ -22,14 +22,14 @@ Decisions marked **"Confirm at session"** in the recommendation require leadersh
 | 3.03 | Pre-Quote | 10 | 9 | 1 |
 | 3.04 | Order Management | 19 | 19 | 0 |
 | 3.05 | Operations | 11 | 11 | 0 |
-| 3.06 | Project Management | 6 | 4 | 2 |
-| 3.07 | Commissions | 7 | 6 | 1 |
-| 3.08 | Financial Management | 13 | 12 | 1 |
+| 3.06 | Project Management | 5 | 4 | 1 |
+| 3.07 | Commissions | 8 | 6 | 2 |
+| 3.08 | Financial Management | 13 | 11 | 2 |
 | 3.09 | Business Intelligence | 12 | 12 | 0 |
-| 3.10 | System Setup & Configuration | 11 | 11 | 0 |
-| | **Total** | **120** | **112** | **8** |
+| 3.10 | System Setup & Configuration | 12 | 12 | 0 |
+| | **Total** | **121** | **112** | **9** |
 
-112 decisions are recommended-default-yes confirmations. 8 require leadership-team selection at the working session.
+112 decisions are recommended-default-yes confirmations. 9 register entries require leadership-team selection at the working session; two of those (§3.07 D-1b and §3.08 D-4) are paired — the same call (15% labor markup retention vs. elimination) surfaces in both sections, so the working session effectively resolves **8 distinct decisions**.
 
 ---
 
@@ -107,7 +107,7 @@ Decisions marked **"Confirm at session"** in the recommendation require leadersh
 | 5c | Customer-facing and vendor-facing templates recreated via PDF Composer; vendor PO redesign as explicit deliverable | Yes | |
 | 5d | Web-based client quote approval portal adopted, replacing Docentric email system | Yes | |
 | 6 | Manual tax-override capability for government and MillerKnoll-direct-bill orders | Yes | |
-| 7a | Combined MillerKnoll integration suite (ServiceNet, ServiceTime, Quote Tool, Order Manager) | Yes | |
+| 7a | MillerKnoll integration suite (ServiceNet, MillerKnoll Quote Tool, MillerKnoll Order Manager — both companies use these) | Yes | |
 | 7b | Coupa email-parsing automation evaluation preserved as Phase-1-or-Phase-2 decision | Yes | |
 | 8a | Pivot's PO generation framework (direct PO from SIF, draft PO with line constitution, mass PO updates, requisition workflows, intelligent splitting) | Yes | |
 | 8b | Vendor credit limit warning framework adopted from KBM (REQ-026); framework owned here per CT-12 | Yes | |
@@ -128,12 +128,11 @@ Decisions marked **"Confirm at session"** in the recommendation require leadersh
 | 7 | Time tracking feeds dual GP framework and project profitability; supports Pivot REQ-3.05.02 / REQ-3.05.03 / REQ-3.05.04 plus KBM REQ-017 / REQ-018 / REQ-019 PM rate-card structure | Yes | |
 | 8 | Pivot installation-crew scheduling framework (REQ-3.02.01 through REQ-3.02.06) for field-installer scheduling; PM workload planning decided in Project Management §3.06 D-4 | Yes | |
 
-## §3.06 Project Management (6 decisions)
+## §3.06 Project Management (5 decisions)
 
 | # | Decision | Default | Status |
 |---|---|---|---|
-| 1a | Project management consolidates into NetSuite Orion native; Workfront sunsets on a defined transition timeline | Yes | |
-| 1b | Capability-replacement scope at cutover and Workfront sunset timeline | Confirm at session | |
+| 1 | Project management consolidates into NetSuite Orion native; Workfront sunsets on a defined transition timeline (Pivot BRD §2.01 source-direction). *Capability-replacement scope at cutover, sunset timeline, and Pivot PM team migration plan are configuration sequencing items addressed during Realize-phase planning — not separate working-session decisions.* | Yes | |
 | 2 | NetSuite Orion native project record as merged-company financial-and-reporting aggregation layer and project-execution system of record | Yes | |
 | 3a | Pivot PM-workload-planning framework adopted (forecasted utilization, budget-to-actual alerting at 80%/100%, capacity-based PM assignment) | Yes | |
 | 3b | Task-management sophistication level (10 phases vs. 300 tasks per KBM REQ-034 / Operations BRD §10) | Confirm at session | |
@@ -141,11 +140,12 @@ Decisions marked **"Confirm at session"** in the recommendation require leadersh
 
 *(D-3 IPM-and-sales-coordinator routing inherited from Pre-Quote §3.03 D-8; not a separate decision here.)*
 
-## §3.07 Commissions (7 decisions)
+## §3.07 Commissions (8 decisions)
 
 | # | Decision | Default | Status |
 |---|---|---|---|
-| 1 | Commissions calculate on commissionable GP per CRM §3.02 D-6 (quoted labor rates); Internal Services Cost Basis configurable on commission plan record | Yes | |
+| 1a | Commissions calculate on commissionable GP per CRM §3.02 D-6 (quoted labor rates); Internal Services Cost Basis configurable on commission plan record | Yes | |
+| 1b | **Retain or eliminate the 15% labor markup formula-line pattern** (KBM REQ-038 / Operations REQ-021-023 / Pre-Quote v2.0 REQ-LQ-006). GSI's instinct is elimination; we follow KBM's lead since the pattern is theirs. *Paired with §3.08 D-4 — same call.* | Confirm at session | |
 | 2 | Merged-company commission rate structure designed during organizational alignment; Pivot's tiered IGP ladder is the working starting point | Confirm at session | |
 | 3 | Commission splits with percentage-allocation and true-margin-dollar split capability; Pivot teamed-account / account-transition / leave-of-absence patterns adopted; integrated with internal referral attribution | Yes | |
 | 4 | Internal cross-division referral attribution operationalized in Commissions; specific compensation rates during organizational alignment | Yes | |
@@ -153,7 +153,7 @@ Decisions marked **"Confirm at session"** in the recommendation require leadersh
 | 5b | Web-vendor exclusion, storage-fee commissionability, year-end reconciliation / true-up at fiscal-year close | Yes | |
 | 6 | Tiered IGP ladder, deposit bonus, teamed-account bonus, CSM quarterly bonus, Construction Solutions sales rep bonus tiers configured; specific program activation during organizational alignment | Yes | |
 
-*(Specific commission rates per role and division are determined during organizational alignment, not at the working session.)*
+*(Commission Module is configured pre-go-live and runs in parallel with existing commission processes; cut-over to using the Module's calculations happens post-go-live after parallel-run validation. Specific commission rates per role and division are determined during organizational alignment, not at the working session.)*
 
 ## §3.08 Financial Management (13 decisions)
 
@@ -164,7 +164,7 @@ Decisions marked **"Confirm at session"** in the recommendation require leadersh
 | 2b | 13-period calendar adopted as merged-company calendar | Yes | |
 | 3a | Joint revenue-recognition-rules design session with ASC 606 compliance validation | Yes (rules confirmed during session) | |
 | 3b | Accrued revenue journal entries with approval workflow adopted as operational mechanism | Yes | |
-| 4 | 15% labor markup eliminated; merged-company GP on actual labor cost per CRM §3.02 D-6 | Yes | |
+| 4 | **Retain or eliminate the 15% labor markup formula-line pattern** (KBM REQ-038 / Operations REQ-021-023 / Pre-Quote v2.0 REQ-LQ-006). *Paired with §3.07 D-1b — same call. GSI's instinct is elimination; we follow KBM's lead since the pattern is theirs.* | Confirm at session | |
 | 5 | Dual GP framework per Pivot's actual-vs-quoted model with role-based visibility | Yes | |
 | 6a | Multi-bank capability — West Coast Community Bank (KBM) and Comerica (Pivot) as merged-company bank accounts | Yes | |
 | 6b | Advanced Electronic Bill Payments for direct ACH from NetSuite | Yes | |
@@ -190,7 +190,7 @@ Decisions marked **"Confirm at session"** in the recommendation require leadersh
 | 8 | Power BI evaluation deferred to post-go-live | Yes | |
 | 9 | Sales rep and manager scorecards as a BI dashboard component | Yes | |
 
-## §3.10 System Setup & Configuration (11 decisions)
+## §3.10 System Setup & Configuration (12 decisions)
 
 | # | Decision | Default | Status |
 |---|---|---|---|
@@ -201,7 +201,8 @@ Decisions marked **"Confirm at session"** in the recommendation require leadersh
 | 3a | NetSuite File Cabinet as primary transactional document repository | Yes | |
 | 3b | SharePoint as merged-company collaboration-document platform via native connector (Pivot REQ-1.12.01 through REQ-1.12.08) | Yes | |
 | 3c | KBM Google Drive content migrates to SharePoint; Pivot fragmented sources (IQ / Workfront / file shares) consolidate to SharePoint and File Cabinet by document type | Yes | |
-| 4 | Standard Orion 25+ custom role taxonomy (KBM REQ-010) configured against CRM §3.02 D-3a / D-3b decisions | Yes | |
+| 4a | Standard Orion 25+ custom role taxonomy (KBM REQ-010) configured against CRM §3.02 D-3a / D-3b decisions | Yes | |
+| 4b | Merged-company role naming convention finalized during configuration (KBM and Pivot use different role names for similar functions) | Yes; specific names decided during configuration | |
 | 5 | Combined historical data migration scope (Workfront / D365 / KBM Core + archive / Zendesk / HubSpot / documents); pre-migration cleansing and reconciliation per Pivot REQ-3.11.05 / REQ-3.11.06 | Yes | |
 | 6a | Combined confirmed-integrations architecture with NetSuite Orion as system of record | Yes | |
 | 6b | Evaluation / licensing decisions (payroll provider, expense platform, ZoomInfo, manufacturer expansion) addressed in owning sections; technical setup here once decided | Yes | |
@@ -214,16 +215,18 @@ The following decisions require leadership-team selection during the working ses
 
 1. **§3.02 D-3b** — Confirm or refine the merged-company division taxonomy (Pivot's existing four divisions are the working starting point)
 2. **§3.02 D-6b** — Set the merged-company default GP target
-3. **§3.02 D-9b** — Confirm coaching threshold tier definitions for the 2.5x pipeline multiplier
+3. **§3.02 D-9b** — Confirm coaching threshold tier definitions for Pivot's 2.5× pipeline multiplier (Pivot CRM REQ-3.07.01)
 4. **§3.03 D-4b** — Opportunity as scope single source of truth (KBM v2.0 Q12; Matt Denning / Kimi Katsuyoshi input)
-5. **§3.06 D-1b** — Capability-replacement scope at cutover and Workfront sunset timeline
-6. **§3.06 D-3b** — Task-management sophistication level (10 phases vs. 300 tasks per KBM REQ-034 / Operations BRD §10)
-7. **§3.07 D-2** — Merged-company commission rate structure (decided during organizational alignment with sales and finance leadership input; the framework is confirmed at session)
+5. **§3.06 D-3b** — Task-management sophistication level (10 phases vs. 300 tasks per KBM REQ-034 / Operations BRD §10)
+6. **§3.07 D-1b / §3.08 D-4** *(paired — same call surfaced in both sections)* — **Retain or eliminate the 15% labor markup formula-line pattern** (KBM REQ-038 / Operations REQ-021-023 / Pre-Quote v2.0 REQ-LQ-006). GSI's instinct is elimination; we follow KBM's lead since the pattern is theirs.
+7. **§3.07 D-2** — Merged-company commission rate structure framework (Pivot tiered IGP ladder is the working starting point; specific rates during organizational alignment)
 8. **§3.08 D-7** — Merged-company expense platform (Expensify, RAMP, or NetSuite native)
 
 §3.08 D-3a (revenue-recognition rules) is treated as a joint design session output rather than an open at-session selection — the session confirms the design framework; specific rules emerge from the design session itself.
 
-Eight working-session-selection decisions in the final list. Combined with the 112 default-yes confirmations, the working session has a manageable decision load (~5 hours of room time for ~120 decisions, with 30-60 minutes of that time concentrated on the eight open selections).
+§3.06 D-1 (Workfront sunset transition shape) is **not** a working-session decision. Workfront is going away; NetSuite Orion will cover the workload. Capability-replacement scope, sunset timeline, and Pivot PM team migration plan are configuration sequencing items addressed during Realize-phase planning.
+
+Eight working-session calls (resolving across nine register entries since the 15% labor markup question surfaces in both §3.07 D-1b and §3.08 D-4). Combined with the 112 default-yes confirmations, the working session has a manageable decision load (~5 hours of room time for ~121 register entries, with 30-60 minutes of that time concentrated on the eight open selections).
 
 ---
 

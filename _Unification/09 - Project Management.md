@@ -2,7 +2,7 @@
 
 | Field | Value |
 |---|---|
-| **Decision density** | **High** — Workfront sunset to Orion-native project execution; Pivot has substantial Workfront-based project management infrastructure; KBM does not have a separate project-management platform. The merged-company decisions are transition shape and capability-replacement scope |
+| **Decision density** | **High** — Workfront sunset to Orion-native project execution; Pivot has substantial Workfront-based project management infrastructure; KBM does not have a separate project-management platform. The platform direction is committed (NetSuite Orion replaces Workfront per Pivot BRD §2.01); transition sequencing is a configuration decision, not a working-session decision |
 | **Source coverage** | Pivot Project Management BRD v2.0 (full BRD — Pivot operates Workfront for project management); KBM does not have a separate project-management BRD because project work has been coordinated through PMs without a dedicated platform |
 | **KBM source** | No separate BRD; project-management-related capabilities surface in other KBM BRDs — PM workload management and resource visualization (Operations BRD §10, REQ-032 / REQ-033 / REQ-034, all DEFERRED to additional discovery), project request workflow (Marketing §3.01 D-8, Pre-Quote §3.03), project record references (CRM §3.02), and Operations work orders / time tracking (Operations BRD §5 / §6) |
 | **Pivot BRD** | `Project Management/Pivot/4 BRD/10_Pivot Interiors BRD Project Management and Workfront Process Area_v2.0.docx` (markdown copy at `_Unification/working/pivot-brds-md/Project_Management.md`) |
@@ -15,7 +15,7 @@
 
 **Pivot Interiors** operates Adobe Workfront as the dedicated project-management platform. Pivot's BRD documents Workfront-based activity including work-order scheduling against approved labor budgets (Pivot Project Management BRD §3.02, REQ-3.02.01 through REQ-3.02.06), PM time tracking with rate-card cost calculation and budget-to-actual alerting (§3.04, REQ-3.04.01 through REQ-3.04.07), project KPI reporting and forecasted utilization (§3.05, REQ-3.05.01 through REQ-3.05.07), and SharePoint-based document management with vendor portal access for external design partners (§3.06, REQ-3.06.01 through REQ-3.06.07). Pivot's BRD identifies Workfront as a tool the team relies on heavily; Pivot's stated direction (BRD §2.01) is that NetSuite Orion replaces Workfront. Pivot's BRD also names IPMs (Integrated Project Managers) as a role tier handling complex projects, with sales coordinators handling transactional work (Pre-Quote §3.03 D-8 cross-reference).
 
-Pivot's Project Management BRD source-direction is that NetSuite Orion replaces Workfront, and the merged company carries that direction forward. Workfront sunsets; Pivot's project-management activity migrates into NetSuite Orion's native project record framework, augmented with custom enhancements as needed. The merged-company decisions at the working session concern transition shape — sunset timeline, capability-replacement scope (which Workfront features must be present in Orion at cutover vs. phased afterward), and Pivot PM team migration plan — not whether Workfront is retained.
+Pivot's Project Management BRD source-direction is that NetSuite Orion replaces Workfront, and the merged company carries that direction forward. Workfront sunsets; Pivot's project-management activity migrates into NetSuite Orion's native project record framework, augmented with custom enhancements as needed. **Workfront's July 2026 contract expiration is a consideration for sequencing, not a hard go-live deadline** — Pivot leadership (Ken) has acknowledged the merged company will likely not be live by that date; whether to negotiate a shorter Workfront extension is part of the transition conversation, not a leadership decision in this document. Capability-replacement scope at cutover, sunset timeline, and Pivot PM team migration plan are configuration sequencing items addressed during Realize-phase planning with Pivot PM team input.
 
 ## 3.06.2 Where the two companies align
 
@@ -57,14 +57,13 @@ Five in-area divergences. The first is the platform-architecture decision; the o
 
 **Recommendation for the merged company.** Project management consolidates into NetSuite Orion's native project record framework, augmented with custom enhancements for work-order scheduling, time-and-rate-card tracking, budget-to-actual alerting, and forecasted utilization. Workfront is sunset on a defined transition timeline. Pivot's PM team migrates to Orion-native execution; KBM's PMs onboard into the same consolidated environment. The recommendation is grounded in Pivot's own Project Management BRD source-direction (NetSuite Orion replaces Workfront, BRD §2.01), the merged company's platform-consolidation goal, and the ongoing license and integration overhead that retaining Workfront would carry into a multi-platform architecture (Workfront + NetSuite + HubSpot per Marketing §3.01 D-1).
 
-The merged-company decision at the working session is the **transition shape**, not the platform choice. Leadership confirms the sunset direction and decides on capability-replacement scope (which Workfront features must be present in Orion at cutover vs. phased after) and Workfront sunset timeline.
+The platform direction is committed: NetSuite Orion replaces Workfront per Pivot BRD §2.01. Capability-replacement scope at cutover, sunset timeline, and Pivot PM team migration plan are configuration sequencing items addressed during Realize-phase planning with Pivot PM team input — they are not working-session decisions.
 
 Risk: replicating Workfront's project-management depth in Orion native requires custom enhancement and a measured transition for Pivot's PM team. The transition plan front-loads the capabilities the team relies on most heavily and supports Pivot PM team continuity through cutover.
 
 **Decisions for the leadership team.**
 
-- (1a) Confirm: project management consolidates into NetSuite Orion native; Workfront sunsets on a defined transition timeline. *Recommended default: yes.*
-- (1b) Decide: capability-replacement scope at cutover (which Workfront features must be present in Orion at go-live vs. phased afterward) and Workfront sunset timeline. *Recommended default: scope and timeline refined at the working session with Pivot PM team input.*
+- (1) Confirm: project management consolidates into NetSuite Orion native; Workfront sunsets on a defined transition timeline per Pivot BRD §2.01. *Recommended default: yes.* (Capability-replacement scope at cutover, sunset timeline, and Pivot PM team migration plan are configuration sequencing items addressed during Realize-phase planning; not separate leadership-team decisions.)
 
 ---
 
@@ -153,20 +152,20 @@ The merged-company Project Management playbook in shorthand:
 - **Document storage:** SharePoint for project drawings / design files / vendor portal documents (CT-14, Pivot REQ-3.06.01 through REQ-3.06.07); File Cabinet for transactional project documents
 - **Time tracking:** Per Operations §3.05 D-7 framework; feeds dual GP and project profitability
 
-Net read: project management is a substantial operational transition in the unification because Pivot's PMs work primarily in Workfront today. The recommendation commits to Orion-native consolidation in line with Pivot's own BRD direction (BRD §2.01); the working-session decisions are about transition shape — capability-replacement scope at cutover, sunset timeline, task-management sophistication level, and Pivot PM team migration plan — not about whether Workfront is retained.
+Net read: project management is a substantial operational transition in the unification because Pivot's PMs work primarily in Workfront today. The recommendation commits to Orion-native consolidation in line with Pivot's own BRD direction (BRD §2.01); the only working-session decision specific to PM is the task-management sophistication level (the rigor question Matt Denning raised in KBM Operations BRD §10). Capability-replacement scope at cutover, sunset timeline, and Pivot PM team migration plan are configuration sequencing items, not separate working-session decisions.
 
 ## 3.06.6 Decisions for the leadership team
 
 | # | Decision | Default | Reference |
 |---|---|---|---|
 | 1a | Project management consolidates into NetSuite Orion native; Workfront sunsets on a defined transition timeline | Yes | D-1 |
-| 1b | Capability-replacement scope at cutover and Workfront sunset timeline | Refine at working session with Pivot PM team input | D-1 |
+| (configuration sequencing) | Capability-replacement scope at cutover, Workfront sunset timeline, Pivot PM team migration plan | Addressed during Realize-phase planning with Pivot PM team input; not a working-session decision | D-1 |
 | 2 | NetSuite Orion native project record as merged-company financial-and-reporting aggregation layer and project-execution system of record (Pivot 6-digit + 2-digit project-subproject numbering carried forward) | Yes | D-2 |
 | 3a | Pivot PM-workload-planning framework adopted (forecasted utilization, budget-to-actual alerting at 80%/100%, capacity-based PM assignment) — scoped to PM workload, not field installer scheduling | Yes | D-4 |
 | 3b | Task-management sophistication level (10 phases vs. 300 tasks per KBM REQ-034 / Operations BRD §10) | Decided at working session | D-4 |
 | 4 | NetSuite Orion as system of record for project financial KPIs and project execution status; Pivot Power BI integration carried forward via data warehouse connectivity | Yes | D-5 |
 
-> 6 decisions: 4 with default-yes recommendations and 2 (decision 1b transition shape, decision 3b task-management sophistication) decided at the working session. The platform-consolidation direction is committed; the working-session focus is the transition plan and the task-management rigor question Matt Denning raised in KBM Operations BRD §10. (D-3 IPM-and-sales-coordinator routing is inherited from Pre-Quote §3.03 D-8 and does not require a separate decision here.)
+> 5 decisions: 4 with default-yes recommendations and 1 (decision 3b — task-management sophistication) decided at the working session. The platform-consolidation direction is committed; the working-session focus on PM is the task-management rigor question Matt Denning raised in KBM Operations BRD §10. Workfront transition sequencing (capability-replacement scope, sunset timeline, PM team migration plan) is addressed during Realize-phase configuration planning, not at the working session. (D-3 IPM-and-sales-coordinator routing is inherited from Pre-Quote §3.03 D-8 and does not require a separate decision here.)
 
 ## 3.06.7 Configuration carryover
 
@@ -188,8 +187,8 @@ Net read: project management is a substantial operational transition in the unif
 
 ## 3.06.8 Open questions / inputs needed
 
-1. **Capability-replacement scope at cutover** (decision 1b) — which Workfront features must be present in Orion at go-live (work-order scheduling, time tracking with rate cards, budget alerting, forecasted utilization, document management, vendor portal) vs. phased afterward; refined at the working session with Pivot PM team input.
-2. **Workfront sunset timeline** (decision 1b) — date for Workfront subscription wind-down and the transition shape that gets the Pivot PM team there without operational disruption; refined at the working session.
+1. **Capability-replacement scope at cutover** (configuration sequencing) — which Workfront features must be present in Orion at go-live (work-order scheduling, time tracking with rate cards, budget alerting, forecasted utilization, document management, vendor portal) vs. phased afterward; addressed during Realize-phase configuration planning with Pivot PM team input.
+2. **Workfront sunset timeline** (configuration sequencing) — date for Workfront subscription wind-down. Pivot's contract expires July 2026; Pivot leadership has acknowledged the merged company will likely not be live by that date. Whether to negotiate a shorter Workfront extension is part of the transition conversation. Addressed during Realize-phase planning.
 3. **Task-management sophistication level** (decision 3b) — 10 phases vs. 300 tasks question raised in KBM Operations BRD §10 REQ-034 and reflected in Pivot's Workfront-task framework; decided at the working session with Wendy (KBM PM Manager), Kimmy (KBM Account Manager), and Pivot PM team representation.
 4. **Budget-to-actual alert routing** — Pivot REQ-3.04.06 specifies 80% PM notification and 100% leadership escalation; specific routing (which roles receive which alerts) and notification channels (email, in-app, dashboard) decided during configuration.
 5. **PM rate-card configuration** — Pivot's two-tier structure (General PM, Healthcare PM per REQ-3.04.04) carries forward; merged-company application across both companies' project mix and PM-selection logic at time entry decided during configuration.

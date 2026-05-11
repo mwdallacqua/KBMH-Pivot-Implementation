@@ -103,7 +103,7 @@ Each decision is captured live with a yes / no / modified / deferred outcome. Th
 | Banking integrations (West Coast Community Bank + Comerica) | GSI integration team | NetSuite Bank Feeds program for both |
 | Advanced Electronic Bill Payments | GSI integration team | Replaces manual bank-portal uploads; eliminates 42 manual ACH/wires (Pivot) |
 | Payroll integrations (Paylocity + UKG) | GSI integration team | CSV import; merged-company payroll provider decision pending |
-| MillerKnoll integrations (ServiceNet, ServiceTime, Quote Tool, Order Manager, Exemplis) | GSI integration team | Full suite |
+| MillerKnoll integration suite (ServiceNet, MillerKnoll Quote Tool, MillerKnoll Order Manager) plus Exemplis (separate manufacturer) | GSI integration team | Full suite |
 | SharePoint integration | GSI integration team | Collaboration platform; KBM Google Drive transition |
 | Expense platform integration | GSI integration team | Per working-session selection |
 

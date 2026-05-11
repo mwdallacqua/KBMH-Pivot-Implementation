@@ -43,7 +43,7 @@ A small number of decisions concentrate the leadership-team attention:
 
 ## Decisions already committed in the recommendation
 
-The recommendation document closes a number of decisions through reconciliation against the principle and Codex review. These are committed and require leadership-team confirmation rather than open debate:
+The recommendation document closes a number of decisions through reconciliation against the principle. These are committed and require leadership-team confirmation rather than open debate:
 
 - Pipeline model: 4-stage weighted with Commit Forecast view (§3.02 D-1)
 - Sales hierarchy: two-dimensional (geography + division) (§3.02 D-3a)
